@@ -14,11 +14,16 @@ Step 1: Download MSYS2 https://www.msys2.org/
 
 Step 2: Open MSYS2 UCRT64 from the Start Menu
 
-Step 3: Update Packages pacman -Syu
+Step 3: Update Packages 
 
-Step 4: Restart the terminal and pacman -Su
+        pacman -Syu
+
+Step 4: Restart the terminal 
+
+        pacman -Su
 
 Step 5: Install Flex, Bison and gcc
+
         pacman -S mingw-w64-ucrt-x86_64-flex
         pacman -S mingw-w64-ucrt-x86_64-bison
         pacman -S mingw-w64-ucrt-x86_64-gcc
@@ -26,8 +31,14 @@ Step 5: Install Flex, Bison and gcc
 
 ## How to run the main program written inside lex file
 
-Step 1: flex filename.l
+Step 1 :
 
-Step 2: gcc lex.yy.c
+        flex filename.l
 
-Step 3: a.exe
+Step 2 :
+
+        gcc lex.yy.c
+
+Step 3 :
+
+        a.exe
